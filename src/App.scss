@@ -1,0 +1,64 @@
+.App {}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+.pagination-custom {
+  width: fit-content;
+  margin: auto;
+
+  .pagination {
+    margin: 0em;
+    padding: 1em;
+  }
+
+  ul {
+    display: flex !important;
+    appearance: none !important;
+    list-style-type: none !important;
+
+    .active {
+      a {
+        background-color: #0069D9;
+
+      }
+    }
+
+    .disabled {
+      a {
+        background-color: rgba(0, 0, 0, .2) !important;
+      }
+    }
+
+    li {
+      margin: .4em;
+      padding: 0em !important;
+      // color: rgba(32, 159, 132, .7) !important;
+
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1em;
+      background-color: #0069D9;
+      padding: .5em 1em .6em 1em;
+      color: #fff;
+      border-radius: 6px;
+
+      &:visited {
+        color: rgba(255, 0, 0, .7);
+      }
+    }
+  }
+}
